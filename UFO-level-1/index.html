@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>UFO Finder</title>
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+    
+    <body>
+        <form id="form">
+            <div class="form-group">
+                <label for="sighting-form">Filter sightings by date</label>
+                <input class="form-control" id="ufo-form-input" name="sighting-form" type="text" placeholder="1/1/2020">
+            </div>
+            <button id="button" type="button" class="btn btn-default">Enter</button>
+        </form>
+        <table>
+            <thead>
+                <th>Date</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Shape</th>
+                <th>Duration</th>
+                <th>Comments</th>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </body>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/index.js"></script>
+</html>
