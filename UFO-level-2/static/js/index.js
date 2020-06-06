@@ -53,9 +53,9 @@ function runEnter(){
     tbody.html('');
 
     // Filter sightings in the data to the specified date/time.
-    var results = sightings.filter(sighting => (sighting.datetime == dateInput) &&
-                                    (sighting.city == cityInput) &&
-                                    (sighting.state == stateInput) &&
+    var results = sightings.filter(sighting => (sighting.datetime == dateInput || dateInput == "") &&
+                                    (sighting.city == cityInput || cityInput == "") &&
+                                    (sighting.state == stateInput || dateInput == "") &&
                                     (sighting.country == countryInput) &&
                                     (sighting.shape == shapeInput)
                                     );
