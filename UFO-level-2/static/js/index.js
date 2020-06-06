@@ -56,8 +56,8 @@ function runEnter(){
     var results = sightings.filter(sighting => (sighting.datetime == dateInput || dateInput == "") &&
                                     (sighting.city == cityInput || cityInput == "") &&
                                     (sighting.state == stateInput || dateInput == "") &&
-                                    (sighting.country == countryInput) &&
-                                    (sighting.shape == shapeInput)
+                                    (sighting.country == countryInput || countryInput == "") &&
+                                    (sighting.shape == shapeInput || shapeInput == "")
                                     );
 
     results.forEach((UFOReport) => {
