@@ -17,7 +17,7 @@ function runEnter(){
     // Empty the table object before appending filter results.
     tbody.html('');
     // Filter sightings in the data to the specified date/time.
-    var results = sightings.filter(sighting => sighting.datetime = inputValue);
+    var results = sightings.filter(sighting => sighting.datetime == inputValue);
     results.forEach((UFOReport) => {
         // Append a row to the table for each result.
         var row = tbody.append("tr");

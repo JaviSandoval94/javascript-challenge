@@ -3,29 +3,50 @@
     <head>
         <meta charset="utf-8">
         <title>UFO Finder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cyborg/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/style.css">
         <script src="https://d3js.org/d3.v5.min.js"></script>
     </head>
     
     <body>
-        <form id="form">
-            <div class="form-group">
-                <label for="sighting-form">Filter sightings by date</label>
-                <input class="form-control" id="ufo-form-input" name="sighting-form" type="text" placeholder="1/1/2020">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class = "container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">UFO Sightings
+                        <img class="nav-ufo" src="static/images/ufo.svg">
+                    </a>
+                </div>
             </div>
-            <button id="button" type="button" class="btn btn-default">Enter</button>
-        </form>
-        <table>
-            <thead>
-                <th>Date</th>
-                <th>City</th>
-                <th>State</th>
-                <th>Country</th>
-                <th>Shape</th>
-                <th>Duration</th>
-                <th>Comments</th>
-            </thead>
-            <tbody></tbody>
-        </table>
+          </nav>
+        <div class="container ufo-form">
+            <h1>UFO Sightings</h1>
+            <h5>The Truth is Out There!</h5>
+            <img src="static/images/nasa.jpg" class="cover-image">
+            <div class="jumbotron">
+                <h3>Filter your data here</h3>
+                <hr>
+                <form id="form">
+                    <div class="form-group">
+                        <label for="sighting-form">Date</label>
+                        <input class="form-control" id="ufo-form-input" name="sighting-form" type="text" placeholder="Ex: 1/1/2010">
+                    </div>
+                    <button id="button" type="button" class="btn btn-primary">Enter</button>
+                </form>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Shape</th>
+                    <th>Duration</th>
+                    <th>Comments</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
     </body>
     <script src="static/js/data.js"></script>
     <script src="static/js/index.js"></script>

@@ -1,0 +1,16 @@
+.nav-ufo {
+    position: absolute;
+    bottom: 5px;
+    left: 150px;
+    width: 35px;
+    color: white;
+}
+
+.cover-image {
+    width: 100%;
+    height: 500px;
+}
+
+.ufo-form{
+    margin-top: 30px;
+}

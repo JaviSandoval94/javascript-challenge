@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>UFO Finder</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/cyborg/bootstrap.min.css">
+        <link rel="stylesheet" href="static/css/style.css">
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+    
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class = "container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">UFO Sightings
+                        <img class="nav-ufo" src="static/images/ufo.svg">
+                    </a>
+                </div>
+            </div>
+          </nav>
+        <div class="container ufo-form">
+            <h1>UFO Sightings</h1>
+            <h5>The Truth is Out There!</h5>
+            <img src="static/images/nasa.jpg" class="cover-image">
+            <div class="jumbotron">
+                <h3>Filter your data here</h3>
+                <hr>
+                <form id="form">
+                    <div class="form-group">
+                        <label for="sighting-form">Date</label>
+                        <input class="form-control" id="date-form-input" name="sighting-form" type="text" placeholder="Ex: 1/1/2010">
+                    </div>
+                    <div class="form-group">
+                        <label for="sighting-form">City</label>
+                        <input class="form-control" id="city-form-input" name="sighting-form" type="text" placeholder="Ex: benton">
+                    </div>
+                    <div class="form-group">
+                        <label for="sighting-form">State</label>
+                        <input class="form-control" id="state-form-input" name="sighting-form" type="text" placeholder="Ex: ar">
+                    </div>
+                    <div class="form-group">
+                        <label for="sighting-form">Country</label>
+                        <select id="selCountry" class="custom-select">
+                            <option value="us">United States</option>
+                            <option value="ca">Canada</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="sighting-form">Shape</label>
+                        <select id="selShape" class="custom-select">
+                            <label>Shape</label>
+                            <option value="circle">circle</option>
+                            <option value="light">light</option>
+                            <option value="triangle">triangle</option>
+                            <option value="unknown">unknown</option>
+                            <option value="fireball">fireball</option>
+                            <option value="formation">formation</option>
+                            <option value="sphere">sphere</option>
+                            <option value="disk">disk</option>
+                            <option value="chevron">chevron</option>
+                            <option value="rectangle">rectangle</option>
+                            <option value="cross">cross</option>
+                            <option value="flash">flash</option>
+                            <option value="changing">changing</option>
+                            <option value="oval">oval</option>
+                            <option value="cigar">cigar</option>
+                            <option value="teardrop">teardrop</option>
+                            <option value="cylinder">cylinder</option>
+                            <option value="other">other</option>
+                        </select>
+                    </div> 
+                </form>
+                <button id="button" type="button" class="btn btn-primary filter-button">Enter</button>
+            </div>
+            <table class="table table-hover">
+                <thead>
+                    <th>Date</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Country</th>
+                    <th>Shape</th>
+                    <th>Duration</th>
+                    <th>Comments</th>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </body>
+    <script src="static/js/data.js"></script>
+    <script src="static/js/index.js"></script>
+</html>
